@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glitz & Glams Annual Dinner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <img src="air-products-logo-.png" class="logo" alt="Air Products Logo">
+    <div class="event-title">Glitz & Glams Glow In Dark Annual Dinner</div>
+    <div class="sub-heading">Welcome to the Event</div>
+
+    <div class="steps">
+      <div><span>Step 1</span> Register by APEX ID</div>
+      <div><span>Step 2</span> Collect your door gift</div>
+      <div><span>Step 3</span> Vote or nominate best dress</div>
+      <div><span>Step 4</span> Possibility to win lucky prizes</div>
+    </div>
+
+    <input type="text" id="apexId" placeholder="APEX ID" />
+    <button onclick="handleCheckIn()">Check-In</button>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Thank you for checking in!</h2>
+      <p>Your APEX ID has been submitted successfully.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
